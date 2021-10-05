@@ -1,0 +1,50 @@
+nav {
+  
+  z-index: 2;
+  display:flex;
+  background-color: #4056a1;
+  color: #FFFFFF;
+  text-indent: 1.5em;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  top: 0px;
+  width: 100%;
+
+}
+
+.tweeter {
+  font-family: 'Bungee';
+  font-weight: 400;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-icon {
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  margin-right: 20px;
+  margin-bottom: -60px;
+
+}
+
+
+/* jquery event for typing .keypress
+play around with the input box first
+.keypress(() => {
+  console.log("test")
+}) event fires everytime you type. Delete doesn't work
+.keyup(() => {
+  console.log(".")
+}) This works with delete, but only counts after the key is up, if held down, it is continually counts until you let go.
+(#word-box(.keyup(() => {
+  let 
+})))
+($('#word.box').val().length) **
+How to get the length of our string... easy .length
+*bug: it counts spaces
+ */
