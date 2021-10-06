@@ -1,4 +1,4 @@
-header {
+.profile {
   
   z-index: 1;
   display: flex;
@@ -21,7 +21,7 @@ header {
 .pic-text {
 
   display: flex;
-  color:lawngreen;
+  color:rgb(194, 143, 33);
   justify-content: center;
 
 }

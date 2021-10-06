@@ -8,7 +8,8 @@ nav {
   height: 120px;
   justify-content: space-between;
   align-items: center;
-  top: 0px;
+  position: fixed;
+  top: 0;
   width: 100%;
 
 }
@@ -31,20 +32,3 @@ nav {
   margin-bottom: -60px;
 
 }
-
-
-/* jquery event for typing .keypress
-play around with the input box first
-.keypress(() => {
-  console.log("test")
-}) event fires everytime you type. Delete doesn't work
-.keyup(() => {
-  console.log(".")
-}) This works with delete, but only counts after the key is up, if held down, it is continually counts until you let go.
-(#word-box(.keyup(() => {
-  let 
-})))
-($('#word.box').val().length) **
-How to get the length of our string... easy .length
-*bug: it counts spaces
- */
