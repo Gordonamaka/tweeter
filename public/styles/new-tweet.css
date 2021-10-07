@@ -1,14 +1,8 @@
-/* Decided to comment out the border/hover effects from the new-tweet section, but left the comments for the aesthetic option to implement whenever. */
+/* Css for form area */
 section.new-tweet {
 
   width: 100%;
   margin-top: 20px
-  /* 
-  outline-width: 4px;
-  outline-style: solid;
-  outline-color:  rgb(0, 0, 0);
-  background-color: #bfd32e; 
-  */
 
 }
 
@@ -82,11 +76,3 @@ output {
 
 /* Once the counter is < 0 */
 .neg { color: red; }
-
-/* Please refer to top comment */
-/* section.new-tweet:hover {
-  
-  background-color: blanchedalmond;
-  box-shadow: 20px 20px 30px black;
- 
-} */
