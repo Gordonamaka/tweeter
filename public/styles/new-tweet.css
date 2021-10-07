@@ -1,96 +1,92 @@
-
+/* Decided to comment out the border/hover effects from the new-tweet section, but left the comments for the aesthetic option to implement whenever. */
 section.new-tweet {
 
-  display:flex;
-  flex-direction: column;
   width: 100%;
+  margin-top: 20px
+  /* 
   outline-width: 4px;
   outline-style: solid;
   outline-color:  rgb(0, 0, 0);
-  background-color: #bfd32e;
-  margin-top: 20px
+  background-color: #bfd32e; 
+  */
 
 }
 
-section.new-tweet:hover {
+
+/* Subjectively decided to leave the errors in the textarea */
+section p#length-error {
   
-  background-color: blanchedalmond;
-  box-shadow: 20px 20px 30px black;
- 
-}
-
-main section h4 { /* when you don't call h4, you can scroll */
-
-  margin-bottom: -30px;
-
-}
-
-#length-error {
-
+  padding-top: 20px;
   display: none;
   color: red;
   
 }
 
-#empty-error {
-
+/* Subjectively decided to leave the errors in the textarea */
+section p#empty-error {
+  
+  padding-top: 20px;
   display: none;
   color: red;
 
 }
 
+/* Gives the form more space */
 form {
 
-  align-items: center;
-  flex-direction: column;
   margin-top: 100px;
-  width: 100%;
 
 }
 
+/* Where you write your tweets */
 textarea {
 
   margin-top: -50px;
   width: 100%;
   border: none;
-  box-sizing: border-box;
   background-color: transparent;
   outline: none;
   border-bottom: solid;
 
 }
 
+/* Tweet button grouped with counter to provide space-between & center */
 .button-counter {
 
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 
 }
 
+/* Tweet button */
 button {
 
   margin-top: 5px;
   background-color: #4056a1;
-  flex-direction: row;
   color:white;
   font-family: "Bungee";
-  padding: 10px 20px;
-  text-align: left;
-  justify-content: space-around;
+  padding: 10px 15px;
   margin-bottom: 10px;
+  margin-left: 10px;
 
 }
 
+/* The counter (140) */
 output {
 
-  text-align: right;
   font-family: "Bungee";
-  flex-direction: row;
-  justify-content: space-around;
+  margin-right: 10px;
 
 }
 
+/* Once the counter is < 0 */
 .neg { color: red; }
+
+/* Please refer to top comment */
+/* section.new-tweet:hover {
+  
+  background-color: blanchedalmond;
+  box-shadow: 20px 20px 30px black;
+ 
+} */

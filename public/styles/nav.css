@@ -1,25 +1,26 @@
+/* Navigation bar fixed positioning and spacing */
 nav {
   
   z-index: 2;
   display:flex;
-  background-color: #4056a1;
   color: #FFFFFF;
   text-indent: 1.5em;
   height: 120px;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   top: 0;
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 
 }
 
 /* Navigation => span */
 nav span {
+
   font-family: 'Bungee';
-  font-weight: 400;
-  flex-direction: column;
-  align-items: center;
+  font-size: larger;
+
 }
 
 /* Navigation => navbar icon and text */
@@ -28,12 +29,13 @@ nav div.navbar-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color:white;
+  font-weight: 600;
   margin-right: 20px;
   margin-bottom: -35px;
 
 }
 
+/* To close the gap between the icon and text */
 nav div i {
 
   margin-top: -20px;

@@ -34,7 +34,7 @@
   <nav>
     <span class="tweeter">tweeter</span>
     <div class="navbar-icon">
-      <p><b>Write a new tweet</b></p>
+      <p>Write a new tweet</p>
       <i class="fas fa-angle-double-down"></i>
     </div>
   </nav>
@@ -44,18 +44,19 @@
     </div>
     <br>
     <div class="pic-text">
-      <h2>Your <span class="name">Name</span></h2>
+      <h2>Claire <span class="last-name">Redfield</span></h2>
     </div>
   </header>
   <!-- Page-specific (main) content here -->
   <main>
     <section class="new-tweet">
-      <h4>What are you humming about?</h4>
-      <p id="length-error">Your characters are over 140 characters.</p>
-      <p id="empty-error">You need an input to post a Tweet.</p>
+      <p id="length-error"> <i class="fas fa-exclamation-triangle"></i> <b>Your characters are over 140 characters.</b>
+        <i class="fas fa-exclamation-triangle"></i></p>
+      <p id="empty-error"> <i class="fas fa-exclamation-triangle"></i> <b>You need an input to post a Tweet.</b> <i
+          class="fas fa-exclamation-triangle"></i></p>
       <form id="more-tweets" method="Post" action="/tweets.js">
         <label for="tweet-text"></label>
-        <textarea type="text" name="text" id="tweet-text"></textarea>
+        <textarea type="text" name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
         <div class="button-counter">
           <button id="load-more-tweets" type="submit">Tweet</button>
           <output class="counter" name="counter" for="tweet-text">140</output>

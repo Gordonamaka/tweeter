@@ -1,9 +1,10 @@
-.profile {
+/* Profile picture and name positioning */
+header.profile {
   
   z-index: 1;
   display: flex;
   height: 400px;
-  width: 100%;
+  width: 30%;
   flex-direction: column;
   background-color: #f5b800;
   justify-content: center;
@@ -12,22 +13,25 @@
 
 }
 
+/* Positioning the picture */
 header div.pic {
 
   display: flex;
 
 }
 
+/* Positioning the text */
 header div.pic-text {
   
   margin-top: -20px;
-  display: flex;
   color:black;
-  justify-content: center;
+  flex-direction: row;
 
 }
 
-.name {
+
+/* Making the last name unbolded for subjective styling p */
+header div h2 span.last-name {
 
   font-weight: normal;
 

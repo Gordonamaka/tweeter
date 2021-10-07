@@ -18,30 +18,101 @@
  * Global layout stuff
 */
 
+/* Main page */
 main {
 
   display: flex;
-  width: 90%;
   background-color: #f5b800;
   flex-direction: column;
   align-items: center;
-  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png")
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
 
 }
 
+/* Body after the nav bar */
 body {
   
   display: flex;
-  flex-direction: column;
   align-items: center;
   color: #545149;
-  background-color: #f5b800;
   font-family: "Source Sans Pro", "sans-serif"; 
   font-size: 24px;
-  padding-top: 120px;
-  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png")
+  background-color: #f5b800;
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+*/
+
+
+/* Responsive design for max-width 420px */
+@media only screen and (max-width: 420px) {
+
+    
+  nav {
+
+    background-color: #f5b800;
+    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+    margin-top: -80px;
+
+  }
+
+  body {
+     
+    flex-direction: column;
+  
+  }
+
+  main {
+
+    width: 90%;
+
+  }
+}
+
+/* Responsive design for max-width 768px */
+@media only screen and (max-width: 768px) {
+
+  body {
+       
+    flex-direction: column;
+   
+  }
+
+  main {
+
+    width: 90%;
+
+  }
+
+}
+
+
+/* Responsive design for min-width 768px */
+@media only screen and (min-width: 768px) {
+   
+  nav {
+
+    background-color: #4056a1;
+    position: fixed;
+
+  }
+
+  main {
+
+    width: 60%;
+    padding-left: 20px;
+
+  }
+
+  body {
+
+    padding-top: 80px;
+
+  }
+
+}
+
+

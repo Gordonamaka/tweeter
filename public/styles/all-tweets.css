@@ -1,27 +1,26 @@
+/* Provide the width for all tweets */
 section.all-tweets {
   
-  display: flex;
   width: 100%;
-  flex-direction: column;
-
+  
 }
 
+/* General positioning and outlines for the tweets */
 section article {
   
   outline-width: 4px;
   outline-style: solid;
   outline-color:  black;
   padding: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: inherit;
-  height: 235px;
+  height: 100%;
+  word-break: break-all;
   margin-top: 25px;
+  margin-bottom: 10px;
   background-color: #bfd32e;
-
+  
 }
 
+/* Hover effect for the tweets */
 section article:hover {
 
   background-color: blanchedalmond;
@@ -29,23 +28,22 @@ section article:hover {
 
 }
 
+/* Provide spacing in the header */
 section article header {
 
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 
 }
 
+/* Ava pic and ID positioning */
 section article header div.picId {
 
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-
 
 }
 
+/* Positioning for the header and it's contents */
 section article header content {
 
   display: flex;
@@ -54,10 +52,10 @@ section article header content {
 
 }
 
+/* Aligns the footer and whatever is inside with the header */
 section article footer {
 
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   border-top-style: solid;
@@ -67,6 +65,7 @@ section article footer {
 
 }
 
+/* Hover effects for all three icons */
 .fa-flag:hover {
   
   color: chocolate;
