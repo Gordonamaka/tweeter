@@ -14,21 +14,28 @@ nav {
 
 }
 
-.tweeter {
+/* Navigation => span */
+nav span {
   font-family: 'Bungee';
   font-weight: 400;
   flex-direction: column;
   align-items: center;
 }
 
-.navbar-icon {
+/* Navigation => navbar icon and text */
+nav div.navbar-icon {
 
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   color:white;
   margin-right: 20px;
-  margin-bottom: -60px;
+  margin-bottom: -35px;
+
+}
+
+nav div i {
+
+  margin-top: -20px;
 
 }

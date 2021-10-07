@@ -21,7 +21,9 @@
   <link rel="stylesheet" href="/styles/all-tweets.css" type="text/css" />
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
@@ -30,12 +32,10 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <div class="tweeter">
-      <span>tweeter</span>
-    </div>
+    <span class="tweeter">tweeter</span>
     <div class="navbar-icon">
+      <p><b>Write a new tweet</b></p>
       <i class="fas fa-angle-double-down"></i>
-      <b>Write a new tweet</b>
     </div>
   </nav>
   <header class="profile">
@@ -48,44 +48,21 @@
     </div>
   </header>
   <!-- Page-specific (main) content here -->
-  <main class="main-container">
+  <main>
     <section class="new-tweet">
-      <h4 class="header4">What are you humming about?</h4>
-      <form class="tweet-form" method="Post" action="/tweets.js">
+      <h4>What are you humming about?</h4>
+      <p id="length-error">Your characters are over 140 characters.</p>
+      <p id="empty-error">You need an input to post a Tweet.</p>
+      <form id="more-tweets" method="Post" action="/tweets.js">
         <label for="tweet-text"></label>
-        <textarea type="text" class="tweet-space" wrap="on" name="text" id="tweet-text"></textarea>
-
-        <div class="output">
-          <div class="button-counter">
-            <button class="tweet-button" type="submit">Tweet</button>
-            <output id="counter" name="counter" for="tweet-text">140</output>
-          </div>
+        <textarea type="text" name="text" id="tweet-text"></textarea>
+        <div class="button-counter">
+          <button id="load-more-tweets" type="submit">Tweet</button>
+          <output class="counter" name="counter" for="tweet-text">140</output>
         </div>
       </form>
     </section>
-    <section class="tweet-section">
-      <article class="tweet-container">
-        <header class="tweet-header">
-          <div class="picId">
-            <i class="fas fa-user-astronaut"></i>
-            <img src="${data.user.avatar}">
-            <p>${data.user.name}</p>
-          </div>
-          <p>${data.user.handle}</p>
-          <content>
-            <p>${data.user.content}</p>
-          </content>
-
-        </header>
-        <footer class="tweet-footer">
-          <p>${timeago.format(data.created_at)} </p>
-          <div>
-            <i class="fas fa-flag"></i>
-            <i class="fas fa-retweet"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-        </footer>
-      </article>
+    <section class="all-tweets">
     </section>
   </main>
 </body>
