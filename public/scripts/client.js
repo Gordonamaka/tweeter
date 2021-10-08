@@ -15,9 +15,9 @@ $(document).ready(() => {
       </div>
         <p>${escape(data.user.handle)}</p>
     </header>  
-    <content>
+    <body>
         <p>${escape(data.content.text)}</p>
-    </content>
+    </body>
     <footer>
       <p>${timeago.format(escape(data.created_at))} </p>
       <div>
@@ -36,8 +36,6 @@ $(document).ready(() => {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-
-
 
   // render tweets function to loop and prepend tweets in descending order
   const renderTweets = function (tweets) {

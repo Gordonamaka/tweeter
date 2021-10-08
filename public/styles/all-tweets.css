@@ -44,8 +44,8 @@ section article header div.picId {
 
 }
 
-/* Positioning for the header and it's contents */
-section article header content {
+/* Positioning for the header and it's body's content */
+section article header body {
 
   display: flex;
   align-items: center;
