@@ -12,7 +12,8 @@ section article {
   outline-style: solid;
   outline-color:  black;
   padding: 25px;
-  height: 100%;
+  height: inherit;
+  width: 100%;
   word-break: break-all;
   margin-top: 25px;
   margin-bottom: 10px;

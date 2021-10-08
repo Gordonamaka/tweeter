@@ -7,7 +7,7 @@
 
   box-sizing: border-box;
   height: 100%;
-  margin: auto;
+  
   
 }
 *, *:before, *:after {
@@ -50,7 +50,11 @@ body {
 /* Responsive design for max-width 420px */
 @media only screen and (max-width: 420px) {
 
+  section.all-tweets {
+    width: 100%;
     
+  }
+  
   nav {
 
     background-color: #f5b800;
@@ -100,16 +104,25 @@ body {
 
   }
 
+  section.all-tweets {
+
+    padding-right: 20px;
+
+  }
+
   main {
 
     width: 60%;
     padding-left: 20px;
+    height: 600px;
+    overflow-y: auto;
 
   }
 
   body {
 
-    padding-top: 80px;
+    padding-top: 50px;
+    min-height: 100%;
 
   }
 
