@@ -23,6 +23,12 @@ This repository includes all the code for this project. With the code provided, 
 
 Below I will provide screenshots of the app's general UI.
 
+!["Possible error messages users will see"](https://github.com/Gordonamaka/tweeter/blob/master/docs/Error-message.png?raw=true)
+
+!["Scrolling through tweets section"](https://github.com/Gordonamaka/tweeter/blob/master/docs/Scrolling-thru-tweets.png?raw=true)
+
+If you use previous commits, the tweeter design will look like the screenshots below.
+
 !["Possible error messages users will see"](https://github.com/Gordonamaka/tweeter/blob/master/docs/Possible-error-messages.png?raw=true)
 
 !["After new tweet posted"](https://github.com/Gordonamaka/tweeter/blob/master/docs/After-new-tweet-posted.png?raw=true)
